@@ -1,0 +1,9 @@
+*.classpath
+*.project
+build
+target
+test
+.settings
+lib
+*.jar
+.git

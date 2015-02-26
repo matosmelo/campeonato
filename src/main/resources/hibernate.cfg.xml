@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+  "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.username">
+			root
+		</property>
+		<property name="hibernate.connection.password">
+			eiffel65
+		</property>
+		<property name="hibernate.connection.url">
+			jdbc:mysql://localhost/campeonato
+		</property>
+		<property name="hibernate.connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+		<property name="hibernate.dialect">
+			org.hibernate.dialect.MySQL5InnoDBDialect
+		</property>
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+
+		<!-- Broken pipe -->
+		<!-- <property name="hibernate.connection.autocommit">true</property> -->
+		<!-- <property name="hibernate.connection.autoReconnect">true</property> -->
+
+		<!-- Entidade -->
+		<mapping class="br.com.matosmelo.campeonato.modelo.Usuario" />
+		<mapping class="br.com.matosmelo.campeonato.modelo.Jogo" />
+	</session-factory>
+</hibernate-configuration>
