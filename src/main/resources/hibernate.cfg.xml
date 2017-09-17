@@ -6,11 +6,16 @@
 <hibernate-configuration>
 	<session-factory>
 		<property name="hibernate.connection.username">
-			root
+			matosmelo
 		</property>
-		<property name="hibernate.connection.password">
-			eiffel65
-		</property>
+		
+		<!--	Exemplo de acesso com user e senha -->
+		<!-- <property name="hibernate.connection.username"> -->
+		<!--	root -->
+		<!--</property>-->
+		<!--<property name="hibernate.connection.password">-->
+		<!--	senha-->
+		<!-- </property>-->
 		<property name="hibernate.connection.url">
 			jdbc:mysql://localhost/campeonato
 		</property>
